@@ -61,6 +61,16 @@ builtin_print.toString = function () {
 
 cb.addGlobal("print", builtin_print);
 
+function ll(){
+  return "10";
+}
+
+open_lastLine.toString = function(){
+  return "function ll(last_line_idx) {}";
+}
+
+cb.addGlobal("ll", open_lastLine);
+
 // alert
 
 function builtin_alert() {
